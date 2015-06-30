@@ -1,0 +1,46 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Assist", "OpenAuth.Assist\OpenAuth.Assist.csproj", "{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Assist.Weibo", "OpenAuth.Assist.Weibo\OpenAuth.Assist.Weibo.csproj", "{76FC909D-BDA2-4FCE-9B9F-B503A13DF44F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Assist.Tencent", "OpenAuth.Assist.Tencent\OpenAuth.Assist.Tencent.csproj", "{DF5550C5-B4E3-4697-87B7-F6182DBFBC6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Demo.Console", "OpenAuth.Demo.Console\OpenAuth.Demo.Console.csproj", "{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Demo.Winform", "OpenAuth.Demo.Winform\OpenAuth.Demo.Winform.csproj", "{5D818E92-52D8-4643-B6BC-23AAD790B311}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D818E92-52D8-4643-B6BC-23AAD790B311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D818E92-52D8-4643-B6BC-23AAD790B311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D818E92-52D8-4643-B6BC-23AAD790B311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D818E92-52D8-4643-B6BC-23AAD790B311}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76FC909D-BDA2-4FCE-9B9F-B503A13DF44F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FC909D-BDA2-4FCE-9B9F-B503A13DF44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FC909D-BDA2-4FCE-9B9F-B503A13DF44F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FC909D-BDA2-4FCE-9B9F-B503A13DF44F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5550C5-B4E3-4697-87B7-F6182DBFBC6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5550C5-B4E3-4697-87B7-F6182DBFBC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5550C5-B4E3-4697-87B7-F6182DBFBC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5550C5-B4E3-4697-87B7-F6182DBFBC6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
