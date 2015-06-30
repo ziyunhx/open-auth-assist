@@ -5,8 +5,8 @@
 *.suo
 *.user
 *.sln.docstates
-*DS_Store
 *.userprefs
+*DS_Store
 
 # Build results
 [Dd]ebug/
@@ -183,3 +183,8 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+Storm.Net.Adapter.sln.ide/
+*/target/
+*/.settings/
+*/.project
+/.settings
