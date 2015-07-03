@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("NetDimension.OpenAuth")]
+[assembly: AssemblyTitle("OpenAuth.Assist")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Net Dimension Studio")]
-[assembly: AssemblyProduct("NetDimension.OpenAuth")]
-[assembly: AssemblyCopyright("Copyright © Net Dimension Studio 2015")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("OpenAuth.Assist")]
+[assembly: AssemblyCopyright("Copyright © tnidea 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("9da79205-1433-42cc-9dd7-6c1913d431d6")]
+[assembly: Guid("4923DD0F-CDBF-47D7-9099-C4FA53B063B6")]
 
 // 程序集的版本信息由下面四个值组成: 
 //
