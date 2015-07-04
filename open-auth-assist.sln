@@ -1,10 +1,11 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
+# Visual Studio 2012
 VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Assist", "OpenAuth.Assist\OpenAuth.Assist.csproj", "{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.ConsoleDemo", "OpenAuth.ConsoleDemo\OpenAuth.ConsoleDemo.csproj", "{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Demo", "OpenAuth.Demo\OpenAuth.Demo.csproj", "{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC434F36-8A91-48A7-BF76-BE72FFDF0C71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

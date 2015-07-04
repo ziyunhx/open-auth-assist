@@ -1,6 +1,11 @@
-﻿<Properties StartupItem="NetDimension.OpenAuth/OpenAuth.Assist.csproj">
+﻿<Properties StartupItem="OpenAuth.Demo/OpenAuth.Demo.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OpenAuth.ConsoleDemo/Program.cs">
+    <Files>
+      <File FileName="OpenAuth.ConsoleDemo/Program.cs" Line="10" Column="1" />
+      <File FileName="OpenAuth.ConsoleDemo/Test/SinaWeiboTest.cs" Line="91" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
