@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
 VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Assist", "OpenAuth.Assist\OpenAuth.Assist.csproj", "{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenAuth.Demo", "OpenAuth.Demo\OpenAuth.Demo.csproj", "{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNIdea.Common", "TNIdea.Common\TNIdea.Common.csproj", "{1DA0FA07-ED7C-497A-8B8A-A19ED60B49E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38B68338-7FC0-4AB7-B8A7-674E0BCBF899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D2F9EE-81AE-4F87-B281-0A6A6AA299C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA0FA07-ED7C-497A-8B8A-A19ED60B49E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA0FA07-ED7C-497A-8B8A-A19ED60B49E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA0FA07-ED7C-497A-8B8A-A19ED60B49E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA0FA07-ED7C-497A-8B8A-A19ED60B49E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
