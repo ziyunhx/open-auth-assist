@@ -54,8 +54,6 @@ namespace OpenAuth.Assist.Client
 			return ub.ToString();
 		}
 
-
-
 		public override void GetAccessTokenByCode(string code)
 		{
 			var response = HttpPost(TOKEN_URL, new
