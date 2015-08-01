@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using ImitateLogin;
+using TNIdea.Common.Helper;
 
 namespace OpenAuth.Assist
 {
@@ -33,18 +34,7 @@ namespace OpenAuth.Assist
 
 		protected HttpClient http;
 
-        public virtual bool DoLogin(string userName, string password, LoginSite loginSite)
-        {
-            LoginHelper loginHelper = new LoginHelper();
-            LoginResult loginResult = loginHelper.Login(userName, password, loginSite);
-
-            if (loginResult.Result != ResultType.Success)
-                return false;
-
-            //rebuild the cookie collection and get the token.
-
-            return false;
-        }
+        public abstract bool DoLogin(string userName, string password);
 
 		public HttpResponseMessage HttpGet(string api, dynamic parameters)
 		{

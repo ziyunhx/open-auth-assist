@@ -1,14 +1,16 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using ImitateLogin;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
+using TNIdea.Common.Helper;
 
 namespace OpenAuth.Assist.Client
 {
-	public class SinaWeiboClient : OpenAuthAssist
+    public class SinaWeiboClient : OpenAuthAssist
     {
 		const string AUTH_URL = "https://api.weibo.com/oauth2/authorize";
 		const string TOKEN_URL = "https://api.weibo.com/oauth2/access_token";
@@ -65,7 +67,7 @@ namespace OpenAuth.Assist.Client
 				redirect_uri = CallbackUrl
 			});
 
-			if (response.StatusCode != System.Net.HttpStatusCode.OK)
+			if (response.StatusCode != HttpStatusCode.OK)
 				return;
 
 			var result = JObject.Parse(response.Content.ReadAsStringAsync().Result);
@@ -120,5 +122,29 @@ namespace OpenAuth.Assist.Client
 
 			return base.HttpPostAsync(api, parameters);
 		}
-	}
+
+        public override bool DoLogin(string userName, string password)
+        {
+            LoginHelper loginHelper = new LoginHelper();
+            LoginResult loginResult = loginHelper.Login(userName, password, LoginSite.Weibo);
+
+            if (loginResult.Result != ResultType.Success)
+                return false;
+
+            //rebuild the cookie collection and get the token.
+            CookieContainer cookies = HttpHelper.ConvertToCookieContainer(loginResult.Cookies);
+
+            string authorize = HttpHelper.GetHttpContent(GetAuthorizationUrl(), cookies: cookies);
+
+            //build postbody from html string.
+            string postData = HttpHelper.BuildPostData(authorize);
+
+            string token = HttpHelper.GetHttpContent(AUTH_URL, postData, cookies, null, GetAuthorizationUrl());
+
+            dynamic authorizeCode = JsonConvert.DeserializeObject(token);
+
+            //GetAccessTokenByCode(authorizeCode.);
+            return true;
+        }
+    }
 }

@@ -11,6 +11,8 @@ namespace OpenAuth.ConsoleDemo
 			Console.WriteLine("Waitting for user authentication...");
 
 			var openAuth = new SinaWeiboClient("1402038860", "62e1ddd4f6bc33077c796d5129047ca2", "http://qcyn.sina.com.cn");
+
+            openAuth.DoLogin("46248069@qq.com", "3792500");
 		}
 
 		private void StartTest(SinaWeiboClient openAuth)

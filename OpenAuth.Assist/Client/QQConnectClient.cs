@@ -149,5 +149,10 @@ namespace OpenAuth.Assist.Client
 
 			return base.HttpPostAsync(api, parameters);
 		}
-	}
+
+        public override bool DoLogin(string userName, string password)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
