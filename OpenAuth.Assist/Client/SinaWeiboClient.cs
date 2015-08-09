@@ -5,7 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using TNIdea.Common.Data;
 using TNIdea.Common.Helper;
 
 namespace OpenAuth.Assist.Client
@@ -133,18 +135,37 @@ namespace OpenAuth.Assist.Client
 
             //rebuild the cookie collection and get the token.
             CookieContainer cookies = HttpHelper.ConvertToCookieContainer(loginResult.Cookies);
+            HttpResponse authorize = HttpHelper.HttpRequest(GetAuthorizationUrl(), cookies: cookies);
+            Match matchCode = Regex.Match(authorize.Url, "code=(?<code>[^&]+)");
 
-            string authorize = HttpHelper.GetHttpContent(GetAuthorizationUrl(), cookies: cookies);
+            if (authorize.HttpCode == 200 && matchCode.Success && matchCode.Groups["code"].Success)
+            {
+                string code = matchCode.Groups["code"].Value;
+                GetAccessTokenByCode(code);
+                return true;
+            }
+            else
+            {
+                string postData = string.Format("action=submit&withOfficalFlag=0&ticket=&isLoginSina=&response_type=token&regCallback=&redirect_uri={0}&client_id={1}&state=&from=&userId={2}&passwd={3}&display=js", Uri.EscapeDataString(string.IsNullOrEmpty(CallbackUrl) ? "" : CallbackUrl), Uri.EscapeDataString(ClientId), Uri.EscapeDataString(userName), Uri.EscapeDataString(password));
 
-            //build postbody from html string.
-            string postData = HttpHelper.BuildPostData(authorize);
+                HttpResponse token = HttpHelper.HttpRequest(AUTH_URL, postData, cookies, null, GetAuthorizationUrl());
 
-            string token = HttpHelper.GetHttpContent(AUTH_URL, postData, cookies, null, GetAuthorizationUrl());
+                if (token.HttpCode == 200)
+                {
+                    Match matchToken = Regex.Match(token.Content, "\"access_token\":\"(?<access_token>[^\"]+)\".*?uid\":\"(?<uid>[^\"]+)\"");
 
-            dynamic authorizeCode = JsonConvert.DeserializeObject(token);
+                    if (matchToken.Success && matchToken.Groups["access_token"].Success)
+                    {
+                        AccessToken = matchToken.Groups["access_token"].Value;
+                        UID = matchToken.Groups["uid"].Value;
 
-            //GetAccessTokenByCode(authorizeCode.);
-            return true;
+                        isAccessTokenSet = true;
+                        return true;
+                    }
+                }
+            }
+            
+            return false;
         }
     }
 }
