@@ -5,12 +5,10 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using ImitateLogin;
-using TNIdea.Common.Helper;
 
 namespace OpenAuth.Assist
 {
-	public abstract class OpenAuthAssist
+    public abstract class OpenAuthAssist
     {
 		public string ClientName { get; protected set; }
 		public string ClientId { get; protected set; }

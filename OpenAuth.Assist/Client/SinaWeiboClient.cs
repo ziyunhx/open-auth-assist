@@ -7,8 +7,8 @@ using System.Net;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using TNIdea.Common.Data;
-using TNIdea.Common.Helper;
+using Thrinax.Data;
+using Thrinax.Helper;
 
 namespace OpenAuth.Assist.Client
 {
